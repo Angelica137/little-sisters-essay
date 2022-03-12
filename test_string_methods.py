@@ -18,3 +18,8 @@ def test_check_sentence_ending_false():
 def test_clean_up_spacing():
     sentence = " I like to go on hikes with my dog.  "
     assert clean_up_spacing(sentence) == "I like to go on hikes with my dog."
+
+
+def test_clean_up_spacing_2():
+    sentence = "I like to go on hikes with my dog."
+    assert clean_up_spacing(sentence) == "I like to go on hikes with my dog."
