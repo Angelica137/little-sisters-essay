@@ -23,3 +23,11 @@ def test_clean_up_spacing():
 def test_clean_up_spacing_2():
     sentence = "I like to go on hikes with my dog."
     assert clean_up_spacing(sentence) == "I like to go on hikes with my dog."
+
+
+def test_replace_word_choice():
+    sentence = "I bake good cakes."
+    old_word = "good"
+    new_word = "amazing"
+    assert replace_word_choice(
+        sentence, old_word, new_word) == "I bake amazing cakes."
