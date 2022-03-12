@@ -8,3 +8,8 @@ def test_capitalize_title():
 def test_check_sentence_ending():
     sentence = "and read."
     assert check_sentence_ending(sentence) == True
+
+
+def test_check_sentence_ending_false():
+    sentence = "and read"
+    assert check_sentence_ending(sentence) == False
