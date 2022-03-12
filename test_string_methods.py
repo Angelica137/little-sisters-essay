@@ -13,3 +13,8 @@ def test_check_sentence_ending():
 def test_check_sentence_ending_false():
     sentence = "and read"
     assert check_sentence_ending(sentence) == False
+
+
+def test_clean_up_spacing():
+    sentence = " I like to go on hikes with my dog.  "
+    assert clean_up_spacing(sentence) == "I like to go on hikes with my dog."
